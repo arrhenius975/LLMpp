@@ -19,15 +19,6 @@ High-performance Large Language Model inference engine built from the ground up 
 - **Embeddings & semantic search**
 - **C API** for easy integration
 
-##  Performance Benchmarks
-
-| Model | Hardware | Tokens/sec | Latency (1st token) | Memory |
-|-------|----------|------------|---------------------|--------|
-| Llama-3-8B | M3 Max (12-core) | 420 | 45ms | 4.2GB |
-| Mistral-7B | Intel i9-12900K | 380 | 52ms | 3.8GB |
-| Phi-2-2.7B | AMD Ryzen 9 7950X | 550 | 35ms | 2.1GB |
-
-*Benchmarks run on FP16 precision, 2048 context length.*
 
 ##  Architecture
 
