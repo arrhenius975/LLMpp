@@ -4,13 +4,17 @@ project(LLMpp)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(.)
+include_directories(include)
 
 add_library(llmpp
-    cpuinfo.cpp
-    memoryarena.cpp
-    tensor.cpp
+    src/cpuinfo.cpp
+    src/memoryarena.cpp
+    src/tensor.cpp
 )
 
-add_executable(test_llmpp test.cpp)
-target_link_libraries(test_llmpp llmpp)
+# Tests
+enable_testing()
+add_subdirectory(tests)
+
+# Examples
+add_subdirectory(examples)

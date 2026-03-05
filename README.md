@@ -3,9 +3,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B17)
 
+> **Note**: This project is currently under active development and construction. APIs and features may change.
+
 High-performance Large Language Model inference engine built from the ground up in C++, C, and hand-tuned x86-64 assembly for blazing-fast execution on modern hardware.
 
-## 🚀 Key Features
+##  Key Features
 
 - **Sub-millisecond token generation** on consumer CPUs
 - **Multi-threaded inference** scaling linearly across cores
@@ -17,7 +19,7 @@ High-performance Large Language Model inference engine built from the ground up 
 - **Embeddings & semantic search**
 - **C API** for easy integration
 
-## 📈 Performance Benchmarks
+##  Performance Benchmarks
 
 | Model | Hardware | Tokens/sec | Latency (1st token) | Memory |
 |-------|----------|------------|---------------------|--------|
@@ -27,7 +29,7 @@ High-performance Large Language Model inference engine built from the ground up 
 
 *Benchmarks run on FP16 precision, 2048 context length.*
 
-## 🏗️ Architecture
+##  Architecture
 
 LLM++ consists of optimized components:
 
@@ -37,7 +39,7 @@ LLM++ consists of optimized components:
 - **KV Caching**: Shared memory for multi-turn conversations
 - **Quantization Engine**: Dynamic precision scaling
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 - CMake 3.10+
@@ -52,6 +54,21 @@ cd LLMpp
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
+```
+
+### Project Structure
+
+```
+LLMpp/
+├── include/llmpp/     # Public headers
+├── src/               # Source files
+├── tests/             # Unit tests
+├── examples/          # Example programs
+├── docs/              # Documentation
+├── build/             # Build artifacts (not committed)
+├── CMakeLists.txt     # Build configuration
+├── README.md
+└── LICENSE
 ```
 
 ### Integration
